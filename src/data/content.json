@@ -1,0 +1,243 @@
+{
+    "meta": {
+        "title": {"tr": "Merhaba ben Merve - Full-stack Developer", "en": "Hi, I'm Merve - Full-stack Developer"},
+        "description": {
+            "tr": "Merhaba ben Merve, bir Full-stack Developer'ım. Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim.",
+            "en": "Hello, I'm Merve, a Full-stack Developer. I can craft solid and scalable frontend products."
+        }
+    },
+    "hero": {
+        "greeting": {
+            "tr": "Merhaba! 👋",
+            "en": "Hi! 👋"
+        },
+        "introduction": {
+            "tr": "Ben Merve. Bir full-stack developer'ım. Sağlam ve ölçeklenebilir frontend ürünleri geliştirebilirim.",
+            "en": "I'm Merve. I'm a full-stack developer. I can craft solid and scalable frontend products."
+        },
+        "actionText": {
+            "tr": "Tanışalım!",
+            "en": "Let's meet!"
+        },
+        "profileImage": {
+            "src": "/images/almila-su.webp",
+            "alt": "Almila Su Profile Photo"
+        }
+    },
+    "contact": {
+        "github": {
+            "url": "https://github.com/merve-dasci",
+            "icon": "github"
+        },
+        "linkedin": {
+            "url": "https://www.linkedin.com/in/merve-dasci-50698336a/",
+            "icon": "linkedin"
+        },
+        "status": {
+            "tr": "Şu anda UX, UI & Web Tasarım Projesi için freelancing yapıyorum.",
+            "en": "Currently freelancing for UX, UI & Web Design Project."
+        },
+        "invitation": {
+            "tr": "Ekibinize katılmam için beni davet edin →",
+            "en": "Invite me to join your team →"
+        },
+        "email": "mervedscc97@gmail.com"
+    },
+    "skills": {
+        "title": {
+            "tr": "Yetenekler",
+            "en": "Skills"
+        },
+        "items": [
+            {
+                "name": "JavaScript",
+                "icon": "/images/js-logo.png",
+                "category": "frontend",
+                "link": "https://www.javascript.com/"
+            },
+            {
+                "name": "React",
+                "icon": "/images/react-logo.png",
+                "category": "frontend",
+                "link": "https://react.dev/"
+            },
+            {
+                "name": "Redux",
+                "icon": "/images/redux-logo.png",
+                "category": "frontend",
+                "link": "https://redux.js.org/"
+            },
+            {
+                "name": "Node.js",
+                "icon": "/images/node-logo.png",
+                "category": "backend",
+                "link": "https://nodejs.org/tr"
+            },
+            {
+                "name": "VS Code",
+                "icon": "/images/vs-logo.png",
+                "category": "tools",
+                "link": "https://code.visualstudio.com/"
+            },
+            {
+                "name": "Figma",
+                "icon": "/images/figma-logo.png",
+                "category": "design",
+                "link": "https://www.figma.com/"
+            }
+        ]
+    },
+    "profile": {
+        "title": {
+            "tr": "Profil",
+            "en": "Profile"
+        },
+        "info": {
+            "birthday": {
+                "label": {"tr": "Doğum tarihi", "en": "Birthday"},
+                "value": "19.04.1997"
+            },
+            "residence": {
+                "label": {"tr": "İkamet Şehri", "en": "City"},
+                "value": "İstanbul"
+            },
+            "education": {
+                "label": {"tr": "Eğitim Durumu", "en": "Education"},
+                "value": {"tr": "Bezmialem Vakıf Üniversitesi, Odyoloji Lisans, 2020", "en": "Bezmialem Unv. Audiology Bachelor, 2020"}
+            },
+            "role": {
+                "label": {"tr": "Tercih Ettiği Rol", "en": "Preferred Role"},
+                "value": {"tr": "Frontend, UI", "en": "Frontend, UI"}
+            }
+        },
+        "aboutMe": {
+            "title": {"tr": "About me", "en": "About me"},
+            "content": {
+                "tr": [
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+                    "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                ],
+                "en": [
+                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+                    "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                ]
+            }
+        },
+        "languages": {
+            "title": {"tr": "Diller", "en": "Languages"},
+            "items": [
+                {
+                    "name": {"tr": "Türkçe", "en": "Turkish"},
+                    "level": {"tr": "Ana Dil", "en": "Native"}
+                },
+                {
+                    "name": {"tr": "İngilizce", "en": "English"},
+                    "level": {"tr": "İleri", "en": "Advanced"}
+                }
+            ]
+        },
+        "programming": {
+            "title": {"tr": "Programlama Dilleri", "en": "Programming Languages"},
+            "items": [
+                {
+                    "name": "JavaScript",
+                    "level": 90
+                },
+                {
+                    "name": "TypeScript",
+                    "level": 85
+                },
+                {
+                    "name": "Python",
+                    "level": 80
+                },
+                {
+                    "name": "PHP",
+                    "level": 75
+                }
+            ]
+        },
+        "extra": {
+            "title": {"tr": "Ekstra Beceriler", "en": "Extra Skills"},
+            "items": [
+                {"tr": "Bootstrap, Materialize", "en": "Bootstrap, Materialize"},
+                {"tr": "Stylus, Sass, Less", "en": "Stylus, Sass, Less"},
+                {"tr": "Gulp, Webpack, Grunt", "en": "Gulp, Webpack, Grunt"},
+                {"tr": "GIT Bilgisi", "en": "GIT Knowledge"}
+            ]
+        }
+    },
+    "projects": {
+        "title": {
+            "tr": "Projeler",
+            "en": "Projects"
+        },
+        "items": [
+            {
+                "id": "random-jokes",
+                "title": "Random Jokes",
+                "description": {
+                    "tr": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris.",
+                    "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                },
+                "image": "/images/random-jokes.png",
+                "technologies": ["HTML", "CSS", "JavaScript"],
+                "links": {
+                    "demo": "#",
+                    "github": "#"
+                },
+                "buttons": {
+                    "demo": {"tr": "Demo'yu Gör", "en": "View on Github"},
+                    "github": {"tr": "Github'da Gör", "en": "Go to app"}
+                }
+            },
+            {
+                "id": "are-you-bored",
+                "title": "Are you bored?",
+                "description": {
+                    "tr": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris.",
+                    "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                },
+                "image": "/images/journey.png",
+                "technologies": ["HTML", "CSS", "JavaScript"],
+                "links": {
+                    "demo": "#",
+                    "github": "#"
+                },
+                "buttons": {
+                    "demo": {"tr": "Demo'yu Gör", "en": "View on Github"},
+                    "github": {"tr": "Github'da Gör", "en": "Go to app"}
+                }
+            }
+        ]
+    },
+    "footer": {
+        "actionText": {
+            "title": {
+                "tr": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+                "en": "Let's work together on your next product."
+            },
+            "button": {
+                "tr": "Github",
+                "en": "Github"
+            },
+            "personalBlog": {
+                "title": {
+                    "tr": "Kişisel Blog",
+                    "en": "Personal Blog"
+                },
+                "year": "2019"
+            }
+        }
+    },
+    "ui": {
+        "darkMode": {
+            "tr": "KARANLIK MOD",
+            "en": "DARK MODE"
+        },
+        "language": {
+            "tr": "TÜRKÇE YE GEÇ",
+            "en": "SWITCH TO ENGLISH"
+        }
+    }
+}
