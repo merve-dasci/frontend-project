@@ -181,7 +181,7 @@
                     "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
                 },
                 "image": "/images/random-jokes.png",
-                "technologies": ["HTML", "CSS", "JavaScript"],
+                "technologies": ["react", "vercel", "axios", "react-router"],
                 "links": {
                     "demo": "#",
                     "github": "#"
@@ -199,7 +199,7 @@
                     "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
                 },
                 "image": "/images/journey.png",
-                "technologies": ["HTML", "CSS", "JavaScript"],
+                "technologies": ["react", "vercel", "axios", "react-router"],
                 "links": {
                     "demo": "#",
                     "github": "#"

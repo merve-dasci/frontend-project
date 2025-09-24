@@ -18,13 +18,13 @@ const Skills = () => {
   }
 
   return (
-    <section className="py-8 px-8 bg-white dark:bg-gray-900">
+    <section className="py-8 px-8 bg-white dark:bg-gray-800">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">{content.skills.title[language]}</h2>
         
-        <div className="flex justify-center items-center flex-wrap gap-1">
+        <div className="flex justify-center items-center flex-wrap gap-6">
           {content.skills.items.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center space-y-1">
+            <div key={index} className="flex flex-col items-center space-y-2">
              
               <a 
                 href={skill.link}

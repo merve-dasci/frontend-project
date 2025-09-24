@@ -1,39 +1,47 @@
-import { useApp } from '../../hooks/useApp'
 import content from '../../data/content.json'
 
 const Footer = () => {
-  const { language } = useApp()
   
   return (
-    <footer className="py-16 px-8 bg-gray-50 dark:bg-gray-900 text-center">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-          {content.footer.actionText.title[language]}
-        </h2>
-        
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
-          👋 {content.contact.email}
-        </p>
-        
-        <div className="flex justify-center space-x-6">
-          <a 
-            href="#"
-            className="text-pink-500 hover:text-pink-600 font-medium transition-colors"
-          >
-            Personal Blog
-          </a>
-          <a 
-            href="#"
-            className="text-indigo-600 hover:text-indigo-700 font-medium transition-colors"
-          >
-            Github
-          </a>
-          <a 
-            href="#"
-            className="text-blue-500 hover:text-blue-600 font-medium transition-colors"
-          >
-            Linkedin
-          </a>
+    <footer className="py-16 px-8 bg-white dark:bg-gray-800">
+      <div className="max-w-4xl mx-auto text-center">
+        <div className="inline-flex items-center gap-8">
+         
+          <div>
+            <p className="text-lg text-gray-900 dark:text-white">
+              Let's <span className="underline font-medium">work together</span> on your next product.
+            </p>
+          </div>
+          
+         
+          <div className="flex flex-col space-y-1 text-left">
+            <a 
+              href={content.contact.github.url}
+              className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a 
+              href="#"
+              className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors"
+            >
+              Personal Blog
+            </a>
+            <a 
+              href={content.contact.linkedin.url}
+              className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+            <a 
+              href={`mailto:${content.contact.email}`}
+              className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors"
+            >
+              Email
+            </a>
+          </div>
         </div>
       </div>
     </footer>

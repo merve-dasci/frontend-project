@@ -1,18 +1,37 @@
 
 
 .profile-section {
-  background-color: #f9fafb;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
   padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  width: 1440px;
+  height: 546px;
+  margin: 0 auto;
+}
+
+.profile-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.03) 2px, transparent 2px);
+  background-size: 60px 60px;
+  z-index: -1;
 }
 
 .dark .profile-section {
-  background-color: #111827;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #374151 100%);
 }
 
 .profile-container {
-  max-width: 1200px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 2rem;
+  
 }
 
 .profile-title {

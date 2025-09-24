@@ -1,63 +1,269 @@
-import { useApp } from '../../hooks/useApp'
-import content from '../../data/content.json'
-
 const Projects = () => {
-  const { language } = useApp()
 
   return (
-    <section className="py-16 px-8 bg-white dark:bg-gray-800">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-12 text-center">{content.projects.title[language]}</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {content.projects.items.map((project) => (
-            <div key={project.id} className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg">
-              
-              <div className="w-full h-48 bg-gray-100 dark:bg-gray-700 rounded-lg mb-4 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-             
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">{project.description[language]}</p>
-              
-             
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech, index) => (
-                  <span 
-                    key={index}
-                    className="px-2 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              
-             
-              <div className="flex space-x-3">
-                <a 
-                  href={project.links.github}
-                  className="px-4 py-2 bg-gray-900 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors"
-                >
-                  {project.buttons.demo[language]}
-                </a>
-                <a 
-                  href={project.links.demo}
-                  className="px-4 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700 transition-colors"
-                >
-                  {project.buttons.github[language]}
-                </a>
-              </div>
+    <section 
+      className="bg-white dark:bg-gray-800"
+      style={{
+        padding: "4rem 2rem",
+        textAlign: "center",
+      }}
+    >
+      <div style={{ maxWidth: "1065px", height: "800px", margin: "0 auto" }}>
+        <h2
+          className="text-gray-900 dark:text-white"
+          style={{
+            fontSize: "2rem",
+            fontWeight: "bold",
+            marginBottom: "3rem",
+          }}
+        >
+          Projects
+        </h2>
+
+        <div style={{ display: "flex", gap: "2rem", height: "600px" }}>
+         
+          <div
+            style={{
+              backgroundColor: "#dbeafe",
+              borderRadius: "16px",
+              padding: "24px 24px 0 24px",
+              width: "50%",
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.25rem",
+                fontWeight: "bold",
+                color: "#111827",
+                marginBottom: "12px",
+              }}
+            >
+              Random Jokes
+            </h3>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#4b5563",
+                marginBottom: "16px",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </p>
+
+            <div style={{ marginBottom: "16px" }}>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#2563eb",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                  marginRight: "8px",
+                }}
+              >
+                react
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#2563eb",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                  marginRight: "8px",
+                }}
+              >
+                vercel
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#2563eb",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                }}
+              >
+                axios
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#2563eb",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                }}
+              >
+                router
+              </span>
             </div>
-          ))}
+
+            <div style={{ marginBottom: "60px" }}>
+              <a
+                href="#"
+                style={{
+                  fontSize: "14px",
+                  color: "#111827",
+                  marginRight: "16px",
+                }}
+              >
+                View on Github
+              </a>
+              <a href="#" style={{ fontSize: "14px", color: "#111827" }}>
+                Go to app →
+              </a>
+            </div>
+
+            <div
+              style={{
+                marginTop: "auto",
+                borderRadius: "0 0 16px 16px",
+                overflow: "hidden",
+                height: "200px",
+                margin: "0 -24px -0 -24px",
+              }}
+            >
+              <img
+                src="/images/random-jokes.png"
+                alt="Random Jokes Project"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
+          </div>
+
+          <div
+            style={{
+              backgroundColor: "#dcfce7",
+              borderRadius: "16px",
+              padding: "24px 24px 0 24px",
+              width: "50%",
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.25rem",
+                fontWeight: "bold",
+                color: "#111827",
+                marginBottom: "12px",
+              }}
+            >
+              Are you bored?
+            </h3>
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#4b5563",
+                marginBottom: "16px",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus
+              nec iaculis mauris.
+            </p>
+
+            <div style={{ marginBottom: "16px" }}>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#059669",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                  marginRight: "8px",
+                }}
+              >
+                react
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#059669",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                  marginRight: "8px",
+                }}
+              >
+                vercel
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#059669",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                }}
+              >
+                axios
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#059669",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                }}
+              >
+                router
+              </span>
+              <span
+                style={{
+                  backgroundColor: "white",
+                  color: "#059669",
+                  padding: "4px 12px",
+                  borderRadius: "20px",
+                  fontSize: "12px",
+                }}
+              >
+                redux
+              </span>
+            </div>
+
+            <div style={{ marginBottom: "60px" }}>
+              <a
+                href="#"
+                style={{
+                  fontSize: "14px",
+                  color: "#111827",
+                  marginRight: "16px",
+                }}
+              >
+                View on Github
+              </a>
+              <a href="#" style={{ fontSize: "14px", color: "#111827" }}>
+                Go to app →
+              </a>
+            </div>
+
+            <div
+              style={{
+                marginTop: "auto",
+                borderRadius: "0 0 16px 16px",
+                overflow: "hidden",
+                height: "200px",
+                margin: "0 -24px -0 -24px",
+              }}
+            >
+              <img
+                src="/images/journey.png"
+                alt="Are you bored Project"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Projects
