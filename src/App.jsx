@@ -5,11 +5,14 @@ import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import { ToastContainer } from 'react-toastify'
+import { useApp } from './hooks/useApp'
 import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
+  const { darkMode } = useApp()
+  
   return (
-    <div className="min-h-screen transition-colors duration-300 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       <Header />
       <Hero />
       <Skills />

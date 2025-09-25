@@ -3,6 +3,25 @@
 @tailwind utilities;
 
 
+html.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+html.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+#root.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +31,7 @@
 body {
   font-family: Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ffffff;
 }
 
 body.dark {

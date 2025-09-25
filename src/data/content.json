@@ -174,8 +174,8 @@
         },
         "items": [
             {
-                "id": "random-jokes",
-                "title": "Random Jokes",
+                "id": "pizza-challenge",
+                "title": "Pizza Challenge",
                 "description": {
                     "tr": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris.",
                     "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
@@ -184,7 +184,7 @@
                 "technologies": ["react", "vercel", "axios", "react-router"],
                 "links": {
                     "demo": "#",
-                    "github": "#"
+                    "github": "https://github.com/merve-dasci/fsweb-s8-challenge-pizza.git"
                 },
                 "buttons": {
                     "demo": {"tr": "Demo'yu Gör", "en": "View on Github"},
@@ -192,8 +192,8 @@
                 }
             },
             {
-                "id": "are-you-bored",
-                "title": "Are you bored?",
+                "id": "portfolio",
+                "title": "Portfolio",
                 "description": {
                     "tr": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris.",
                     "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
@@ -202,7 +202,7 @@
                 "technologies": ["react", "vercel", "axios", "react-router"],
                 "links": {
                     "demo": "#",
-                    "github": "#"
+                    "github": "https://github.com/merve-dasci/frontend-project.git"
                 },
                 "buttons": {
                     "demo": {"tr": "Demo'yu Gör", "en": "View on Github"},

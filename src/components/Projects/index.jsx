@@ -1,3 +1,5 @@
+import content from '../../data/content.json'
+
 const Projects = () => {
 
   return (
@@ -8,7 +10,7 @@ const Projects = () => {
         textAlign: "center",
       }}
     >
-      <div style={{ maxWidth: "1065px", height: "800px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "1440px", height: "800px", margin: "0 auto" }}>
         <h2
           className="text-gray-900 dark:text-white"
           style={{
@@ -41,7 +43,7 @@ const Projects = () => {
                 marginBottom: "12px",
               }}
             >
-              Random Jokes
+              {content.projects.items[0].title}
             </h3>
             <p
               style={{
@@ -105,7 +107,8 @@ const Projects = () => {
 
             <div style={{ marginBottom: "60px" }}>
               <a
-                href="#"
+                href={content.projects.items[0]?.links?.github || "#"}
+                target="_blank"
                 style={{
                   fontSize: "14px",
                   color: "#111827",
@@ -126,12 +129,27 @@ const Projects = () => {
                 overflow: "hidden",
                 height: "200px",
                 margin: "0 -24px -0 -24px",
+                position: "relative",
               }}
             >
               <img
-                src="/images/random-jokes.png"
-                alt="Random Jokes Project"
+                src="/images/laptop.png"
+                alt="Pizza Challenge Project"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+              <img
+                src="/images/random-jokes.png"
+                alt="Random Jokes App"
+                style={{
+                  position: "absolute",
+                  top: "25%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  width: "65%",
+                  height: "45%",
+                  objectFit: "cover",
+                  borderRadius: "4px",
+                }}
               />
             </div>
           </div>
@@ -155,7 +173,7 @@ const Projects = () => {
                 marginBottom: "12px",
               }}
             >
-              Are you bored?
+              {content.projects.items[1].title}
             </h3>
             <p
               style={{
@@ -230,7 +248,8 @@ const Projects = () => {
 
             <div style={{ marginBottom: "60px" }}>
               <a
-                href="#"
+                href={content.projects.items[1]?.links?.github || "#"}
+                target="_blank"
                 style={{
                   fontSize: "14px",
                   color: "#111827",
@@ -251,12 +270,27 @@ const Projects = () => {
                 overflow: "hidden",
                 height: "200px",
                 margin: "0 -24px -0 -24px",
+                position: "relative",
               }}
             >
               <img
-                src="/images/journey.png"
-                alt="Are you bored Project"
+                src="/images/laptop.png"
+                alt="Portfolio Project"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+              <img
+                src="/images/random-jokes.png"
+                alt="Random Jokes App"
+                style={{
+                  position: "absolute",
+                  top: "25%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  width: "65%",
+                  height: "45%",
+                  objectFit: "cover",
+                  borderRadius: "4px",
+                }}
               />
             </div>
           </div>

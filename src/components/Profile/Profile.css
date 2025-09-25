@@ -23,7 +23,7 @@
 }
 
 .dark .profile-section {
-  background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #374151 100%);
+  background: #111827;
 }
 
 .profile-container {
@@ -120,7 +120,7 @@
 
 
 .dark .profile-title {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .dark .basic-info-card {
@@ -130,7 +130,7 @@
 
 .dark .basic-info-title {
   border-bottom-color: #374151;
-  color: #ec4899 !important;
+  color: #ec4899;
 }
 
 .dark .info-item {
@@ -138,19 +138,19 @@
 }
 
 .dark .info-label {
-  color: #f9fafb !important;
+  color: #f9fafb;
 }
 
 .dark .info-value {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .dark .about-title {
-  color: #60a5fa !important;
+  color: #60a5fa;
 }
 
 .dark .about-content {
-  color: #f3f4f6 !important;
+  color: #f3f4f6;
 }
 
 

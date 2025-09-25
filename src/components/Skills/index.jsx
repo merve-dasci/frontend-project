@@ -22,21 +22,21 @@ const Skills = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">{content.skills.title[language]}</h2>
         
-        <div className="flex justify-center items-center flex-wrap gap-6">
+        <div className="flex justify-center items-center flex-nowrap gap-6 w-full">
           {content.skills.items.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center space-y-2">
+            <div key={index} className="flex flex-col items-center space-y-2 flex-shrink-0">
              
               <a 
                 href={skill.link}
                 target="_blank"
                 onClick={() => handleSkillClick(skill.name)}
-                className="w-20 h-20 bg-gray-800 rounded-xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+                className="w-30 h-30 rounded-xl flex items-center justify-center  hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
                 title={`Visit ${skill.name} website`}
               >
                 <img 
                   src={skill.icon} 
                   alt={skill.name}
-                  className="w-12 h-12 object-contain"
+                  className="w-40 h-40 object-contain"
                   onError={(e) => {
                     
                     e.target.style.display = 'none'
