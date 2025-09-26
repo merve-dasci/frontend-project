@@ -8,9 +8,17 @@ const Projects = () => {
       style={{
         padding: "4rem 2rem",
         textAlign: "center",
+        minHeight: "100vh",
+        boxSizing: "border-box",
       }}
     >
-      <div style={{ maxWidth: "1440px", height: "800px", margin: "0 auto" }}>
+      <div style={{ 
+        maxWidth: "1440px", 
+        width: "100%",
+        height: "700px", 
+        margin: "0 auto",
+        minWidth: "320px" 
+      }}>
         <h2
           className="text-gray-900 dark:text-white"
           style={{
@@ -22,33 +30,41 @@ const Projects = () => {
           Projects
         </h2>
 
-        <div style={{ display: "flex", gap: "2rem", height: "600px" }}>
+        <div style={{ 
+          display: "flex", 
+          gap: "2rem", 
+          height: "600px",
+          flexWrap: "wrap",
+          justifyContent: "center"
+        }}>
          
           <div
+            className="bg-blue-100 dark:bg-gray-700"
             style={{
-              backgroundColor: "#dbeafe",
               borderRadius: "16px",
               padding: "24px 24px 0 24px",
-              width: "50%",
+              width: "calc(50% - 1rem)",
+              minWidth: "300px",
+              maxWidth: "600px",
               height: "100%",
               display: "flex",
               flexDirection: "column",
             }}
           >
             <h3
+              className="text-gray-900 dark:text-white"
               style={{
                 fontSize: "1.25rem",
                 fontWeight: "bold",
-                color: "#111827",
                 marginBottom: "12px",
               }}
             >
               {content.projects.items[0].title}
             </h3>
             <p
+              className="text-gray-600 dark:text-white"
               style={{
                 fontSize: "14px",
-                color: "#4b5563",
                 marginBottom: "16px",
               }}
             >
@@ -109,15 +125,15 @@ const Projects = () => {
               <a
                 href={content.projects.items[0]?.links?.github || "#"}
                 target="_blank"
+                className="text-gray-900 dark:text-white"
                 style={{
                   fontSize: "14px",
-                  color: "#111827",
                   marginRight: "16px",
                 }}
               >
                 View on Github
               </a>
-              <a href="#" style={{ fontSize: "14px", color: "#111827" }}>
+              <a href="#" className="text-gray-900 dark:text-white" style={{ fontSize: "14px" }}>
                 Go to app →
               </a>
             </div>
@@ -127,58 +143,70 @@ const Projects = () => {
                 marginTop: "auto",
                 borderRadius: "0 0 16px 16px",
                 overflow: "hidden",
-                height: "200px",
+                height: "320px",
                 margin: "0 -24px -0 -24px",
                 position: "relative",
+                flexShrink: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <img
                 src="/images/laptop.png"
                 alt="Pizza Challenge Project"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{ 
+                  width: "100%", 
+                  height: "auto",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                  position: "relative"
+                }}
               />
               <img
                 src="/images/random-jokes.png"
                 alt="Random Jokes App"
                 style={{
                   position: "absolute",
-                  top: "25%",
+                  top: "45%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  width: "65%",
-                  height: "45%",
+                  width: "180px",
+                  height: "110px",
                   objectFit: "cover",
-                  borderRadius: "4px",
+                  borderRadius: "3px",
                 }}
               />
             </div>
           </div>
 
           <div
+            className="bg-green-100 dark:bg-green-900"
             style={{
-              backgroundColor: "#dcfce7",
               borderRadius: "16px",
               padding: "24px 24px 0 24px",
-              width: "50%",
+              width: "calc(50% - 1rem)",
+              minWidth: "300px",
+              maxWidth: "600px",
               height: "100%",
               display: "flex",
               flexDirection: "column",
             }}
           >
             <h3
+              className="text-gray-900 dark:text-white"
               style={{
                 fontSize: "1.25rem",
                 fontWeight: "bold",
-                color: "#111827",
                 marginBottom: "12px",
               }}
             >
               {content.projects.items[1].title}
             </h3>
             <p
+              className="text-gray-600 dark:text-white"
               style={{
                 fontSize: "14px",
-                color: "#4b5563",
                 marginBottom: "16px",
               }}
             >
@@ -250,15 +278,20 @@ const Projects = () => {
               <a
                 href={content.projects.items[1]?.links?.github || "#"}
                 target="_blank"
+                className="text-gray-900 dark:text-white"
                 style={{
                   fontSize: "14px",
-                  color: "#111827",
                   marginRight: "16px",
                 }}
               >
                 View on Github
               </a>
-              <a href="#" style={{ fontSize: "14px", color: "#111827" }}>
+              <a 
+                href={content.projects.items[1]?.links?.demo || "#"}
+                target="_blank"
+                className="text-gray-900 dark:text-white"
+                style={{ fontSize: "14px" }}
+              >
                 Go to app →
               </a>
             </div>
@@ -268,28 +301,38 @@ const Projects = () => {
                 marginTop: "auto",
                 borderRadius: "0 0 16px 16px",
                 overflow: "hidden",
-                height: "200px",
+                height: "320px",
                 margin: "0 -24px -0 -24px",
                 position: "relative",
+                flexShrink: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <img
                 src="/images/laptop.png"
                 alt="Portfolio Project"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{ 
+                  width: "100%", 
+                  height: "auto",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                  position: "relative"
+                }}
               />
               <img
                 src="/images/random-jokes.png"
                 alt="Random Jokes App"
                 style={{
                   position: "absolute",
-                  top: "25%",
+                  top: "45%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  width: "65%",
-                  height: "45%",
+                  width: "180px",
+                  height: "110px",
                   objectFit: "cover",
-                  borderRadius: "4px",
+                  borderRadius: "3px",
                 }}
               />
             </div>

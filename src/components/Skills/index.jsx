@@ -22,7 +22,7 @@ const Skills = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">{content.skills.title[language]}</h2>
         
-        <div className="flex justify-center items-center flex-nowrap gap-6 w-full">
+        <div className="flex justify-center items-center gap-6 w-full lg:flex-nowrap md:flex-nowrap flex-wrap">
           {content.skills.items.map((skill, index) => (
             <div key={index} className="flex flex-col items-center space-y-2 flex-shrink-0">
              

@@ -201,7 +201,7 @@
                 "image": "/images/journey.png",
                 "technologies": ["react", "vercel", "axios", "react-router"],
                 "links": {
-                    "demo": "#",
+                    "demo": "https://frontend-project-three-cyan.vercel.app/",
                     "github": "https://github.com/merve-dasci/frontend-project.git"
                 },
                 "buttons": {
