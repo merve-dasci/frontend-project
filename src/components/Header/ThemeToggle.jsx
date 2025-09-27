@@ -4,6 +4,8 @@ const ThemeToggle = ({ darkMode, toggleDarkMode }) => {
       <button
         onClick={toggleDarkMode}
         className="theme-switch"
+        data-testid="theme-toggle"
+        data-cy="theme-toggle"
         aria-label={`Switch to ${darkMode ? 'light' : 'dark'} mode`}
         type="button"
       >

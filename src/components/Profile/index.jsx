@@ -6,9 +6,9 @@ const Profile = () => {
   const { language } = useApp()
   
   return (
-    <section className="profile-section">
+    <section className="profile-section" data-cy="profile-section">
       <div className="profile-container">
-        <h2 className="profile-title dark:text-white">{content.profile.title[language]}</h2>
+        <h2 className="profile-title dark:text-white" data-cy="profile-title">{content.profile.title[language]}</h2>
         
         <div className="profile-grid">
           

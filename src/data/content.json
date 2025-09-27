@@ -111,15 +111,15 @@
             }
         },
         "aboutMe": {
-            "title": {"tr": "About me", "en": "About me"},
+            "title": {"tr": "Hakkımda", "en": "About me"},
             "content": {
                 "tr": [
-                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                    "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                    "2020 yılında Bezmialem Vakıf Üniversitesinden mezun oldum. İki sene kendi alanımda çalıştıktan sonra yazılıma yöneldim. Kendi giyim markamı kurdum. İki sene bu markayla ilgilendikten sonra ciddi bir yazılım eğitimi almaya karar verdim ve Workintech'e başladım. Şu an frontend eğitimimi tamamladım ve fullstack olma yolunda eğitimime devam ediyorum. Birçok proje tamamladım aşağıya projelerimden iki tanesini ekledim.",
+                    "Yazılım geliştirme konusunda kendimi sürekli geliştirmeyi seven, problem çözme odaklı bir yaklaşımım var."
                 ],
                 "en": [
-                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-                    "Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+                    "I graduated from Bezmialem Vakıf University in 2020. After working in my field for two years, I decided to transition into software development. I founded my own clothing brand and managed it for two years before deciding to pursue formal software education and enrolling in Workintech. I have now completed my frontend training and am continuing my journey to become a full-stack developer. I have built and completed many projects, two of which I've shared below.",
+                    "I am passionate about continuously improving my skills in software development and approach challenges with a strong problem-solving mindset."
                 ]
             }
         },
@@ -177,8 +177,8 @@
                 "id": "pizza-challenge",
                 "title": "Pizza Challenge",
                 "description": {
-                    "tr": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris.",
-                    "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                    "tr": "Pizza Challenge projemde kullanıcı dostu bir pizza sipariş sayfası tasarladım. Proje içerisinde kullandıklarımı aşağıya ekledim.",
+                    "en": "In my Pizza Challenge project, I designed a user-friendly pizza ordering page. I have listed the technologies I used in the project below."
                 },
                 "image": "/images/random-jokes.png",
                 "technologies": ["react", "vercel", "axios", "react-router"],
@@ -195,8 +195,8 @@
                 "id": "portfolio",
                 "title": "Portfolio",
                 "description": {
-                    "tr": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris.",
-                    "en": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus nec iaculis mauris."
+                    "tr": "Bu projemde kişisel web sitemi hazırladım. Projemde kullandıklarımı aşağıya ekledim.",
+                    "en": "In this project, I created my personal website. I have listed the technologies I used in my project below."
                 },
                 "image": "/images/journey.png",
                 "technologies": ["react", "vercel", "axios", "react-router"],

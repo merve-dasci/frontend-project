@@ -1,10 +1,14 @@
+import { useApp } from '../../hooks/useApp'
 import content from '../../data/content.json'
 
 const Projects = () => {
+  const { language } = useApp()
 
   return (
     <section 
       className="bg-white dark:bg-gray-800"
+      data-testid="projects-section"
+      data-cy="projects-section"
       style={{
         padding: "4rem 2rem",
         textAlign: "center",
@@ -21,13 +25,14 @@ const Projects = () => {
       }}>
         <h2
           className="text-gray-900 dark:text-white"
+          data-cy="projects-title"
           style={{
             fontSize: "2rem",
             fontWeight: "bold",
             marginBottom: "3rem",
           }}
         >
-          Projects
+          {content.projects.title[language]}
         </h2>
 
         <div style={{ 
@@ -68,8 +73,7 @@ const Projects = () => {
                 marginBottom: "16px",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus
-              nec iaculis mauris.
+              {content.projects.items[0].description[language]}
             </p>
 
             <div style={{ marginBottom: "16px" }}>
@@ -126,6 +130,7 @@ const Projects = () => {
                 href={content.projects.items[0]?.links?.github || "#"}
                 target="_blank"
                 className="text-gray-900 dark:text-white"
+                data-cy="project-github-link"
                 style={{
                   fontSize: "14px",
                   marginRight: "16px",
@@ -133,7 +138,7 @@ const Projects = () => {
               >
                 View on Github
               </a>
-              <a href="#" className="text-gray-900 dark:text-white" style={{ fontSize: "14px" }}>
+              <a href="#" className="text-gray-900 dark:text-white" data-cy="project-demo-link" style={{ fontSize: "14px" }}>
                 Go to app →
               </a>
             </div>
@@ -210,8 +215,7 @@ const Projects = () => {
                 marginBottom: "16px",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus
-              nec iaculis mauris.
+              {content.projects.items[1].description[language]}
             </p>
 
             <div style={{ marginBottom: "16px" }}>
@@ -279,6 +283,7 @@ const Projects = () => {
                 href={content.projects.items[1]?.links?.github || "#"}
                 target="_blank"
                 className="text-gray-900 dark:text-white"
+                data-cy="project-2-github-link"
                 style={{
                   fontSize: "14px",
                   marginRight: "16px",
@@ -290,6 +295,7 @@ const Projects = () => {
                 href={content.projects.items[1]?.links?.demo || "#"}
                 target="_blank"
                 className="text-gray-900 dark:text-white"
+                data-cy="project-2-demo-link"
                 style={{ fontSize: "14px" }}
               >
                 Go to app →

@@ -18,9 +18,9 @@ const Skills = () => {
   }
 
   return (
-    <section className="py-8 px-8 bg-white dark:bg-gray-800">
+    <section className="py-8 px-8 bg-white dark:bg-gray-800" data-cy="skills-section">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">{content.skills.title[language]}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8" data-cy="skills-title">{content.skills.title[language]}</h2>
         
         <div className="flex justify-center items-center gap-6 w-full lg:flex-nowrap md:flex-nowrap flex-wrap">
           {content.skills.items.map((skill, index) => (

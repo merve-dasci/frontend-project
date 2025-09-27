@@ -12,6 +12,7 @@ const Header = () => {
   return (
     <header 
       className="header-controls"
+      data-cy="header"
       role="banner"
       aria-label="Site header with theme and language controls"
     >

@@ -3,7 +3,7 @@ import content from '../../data/content.json'
 const Footer = () => {
   
   return (
-    <footer className="py-16 px-8 bg-white dark:bg-gray-800">
+    <footer className="py-16 px-8 bg-white dark:bg-gray-800" data-cy="footer">
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-flex items-center gap-12">
         

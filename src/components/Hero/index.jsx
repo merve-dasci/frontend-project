@@ -8,6 +8,7 @@ const Hero = () => {
   return (
     <section 
       className="hero-section flex items-center justify-center"
+      data-cy="hero-section"
       role="main"
       aria-labelledby="hero-heading"
     >
